@@ -1,5 +1,5 @@
 def hello_t(array)
-  if not array.kind_of?(Array)
+  if not block_given?
     puts "Hey! No block was given!"
   else
     array.each do | name |
