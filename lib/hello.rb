@@ -1,11 +1,10 @@
 def hello_t(array)
-  if array.kind_of?(Array)
+  if not array.kind_of?(Array)
     puts "Hey! No block was given!"
   else
     array.each do | name |
       yield name
     end
-    array
   end
 end
 
