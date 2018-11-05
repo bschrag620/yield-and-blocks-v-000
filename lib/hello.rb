@@ -1,6 +1,6 @@
 def hello_t(array)
   array.each do | name |
-    puts yield name
+    yield name
   end
 end
 
