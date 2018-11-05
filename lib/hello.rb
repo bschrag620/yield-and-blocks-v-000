@@ -1,8 +1,6 @@
 def hello_t(array)
-  i = 0
-  while i < array.length
-    yield array[i]
-    i += 1
+  array.each do | name |
+    yield name
   end
 end
 
